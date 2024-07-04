@@ -1,0 +1,80 @@
+*{
+    background-color: #1A1A1C;
+    color: white;
+}
+.main{
+    width: 100%;
+}
+#search{
+    width: 65%;
+    padding: 10px;
+    border: 2px solid #8E8E8E;
+    border-radius: 5px;
+}
+#sort-1,#sort-2{
+    width: 15%;
+    padding: 10px;
+    border: 2px solid #8E8E8E;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#mytable{
+    font-size: 20px;
+    width: 100%;
+}
+td{
+    padding: 1%;
+}
+td:nth-child(6){
+    color: green;
+}
+td:last-child{
+    text-align: right;
+}
+.raw{
+    border-bottom: 2px solid #8E8E8E;
+}
+td:nth-of-type(1),td:nth-of-type(4),td:nth-of-type(5),td:nth-of-type(6){
+    width: 12px;
+}
+td:nth-of-type(2){
+    width: 21%;
+}
+td:nth-of-type(3){
+    width: 6%;
+}
+td:nth-of-type(7){
+    width:25%;
+}
+img{
+    width: 15%;
+    height: 15%;
+    margin: 2%;
+}
+@media (max-width: 930px){
+    .searching-sorting{
+        flex-direction: column;
+        padding: 5px;
+    }
+    #search,#sort-1,#sort-2{
+        width: 100%;
+        margin: 2%;
+    }
+}
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        text-align: center;
+        width: 100%;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+        
+    }
+}
